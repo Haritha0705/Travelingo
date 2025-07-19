@@ -1,4 +1,5 @@
 import React from 'react';
+import "./ScheduleCard.css"
 
 const ScheduleCard = () => {
     return(

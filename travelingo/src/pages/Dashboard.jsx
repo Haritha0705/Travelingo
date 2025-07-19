@@ -1,9 +1,10 @@
 import React from 'react';
+import "./Dashboard.css"
 
 const DashBoard = () => {
     return(
         <>
-
+            <h1>Hello World</h1>
         </>
     )
 }
