@@ -150,10 +150,8 @@
 
 
 
-.bottom-right-section {
-    flex: 0 0 270px;
-    height: 420px;
-    background-color: #17C58B;
-    border-radius: 16px;
-    box-sizing: border-box;
-}
+/*.bottom-right-section {*/
+/*    flex: 0 0 270px;*/
+/*    height: 420px;*/
+/*    border-radius: 16px;*/
+/*}*/

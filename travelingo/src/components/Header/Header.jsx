@@ -54,9 +54,7 @@ const Header = () => {
                             <BestDestinationList img={destinationCardImg3} location={"Gujarat"} main_Text={"Desert Festival"}/>
                         </div>
                     </div>
-                    <div className={"bottom-right-section"}>
-                        <JoinCard/>
-                    </div>
+                    <JoinCard/>
                 </div>
             </div>
         </div>
