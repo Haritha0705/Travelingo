@@ -86,8 +86,8 @@
 }
 
 .bottom-left-section {
-    flex: 1 1 560px;
-    max-width: 560px;
+    flex: 1 1 580px;
+    max-width: 580px;
     background-color: white;
     height: 420px;
     border-radius: 16px;
@@ -146,12 +146,3 @@
 
 
 
-
-
-
-
-/*.bottom-right-section {*/
-/*    flex: 0 0 270px;*/
-/*    height: 420px;*/
-/*    border-radius: 16px;*/
-/*}*/
