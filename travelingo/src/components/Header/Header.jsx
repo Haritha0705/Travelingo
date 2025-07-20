@@ -6,6 +6,10 @@ import BestDestinationList from "../Card/BestDestinationList.jsx";
 import DestinationCard from "../Card/DestinationCard.jsx";
 import JoinCard from "../Card/JoinCard.jsx";
 
+import cardImage1 from "../../assets/images/Mount climbing.png"
+import cardImage2 from "../../assets/images/Night camping.png"
+import cardImage3 from "../../assets/images/Mount climbing2.png"
+
 const Header = () => {
     return(
         <div className={"header-main"}>
@@ -15,18 +19,18 @@ const Header = () => {
                         <h1>Hello, Jemmy 👋🏻</h1>
                         <p>Welcome back and explore the world</p>
                     </div>
-                    <div>
+                    <div className={"right-top-section"}>
                         <SearchInput/>
-                        <div>
+                        <div className={"notification-section"}>
                             <span>4</span>
-                            <Bell/>
+                            <Bell color={"gray"}/>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <DestinationCard/>
-                    <DestinationCard/>
-                    <DestinationCard/>
+                <div className={"top-card-section"}>
+                    <DestinationCard img={cardImage1} main_Text={"Mount climbing"} location={"Green Mountain"}/>
+                    <DestinationCard img={cardImage2} main_Text={"Night camping"} location={"Lightning lake"}/>
+                    <DestinationCard img={cardImage3} main_Text={"Mount climbing"} location={"Green Mountain"}/>
                 </div>
                 <div>
                     <div>
