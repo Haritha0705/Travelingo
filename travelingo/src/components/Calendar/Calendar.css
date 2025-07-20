@@ -32,11 +32,11 @@
     align-items: center;
     justify-content: center;
     border: 1px solid gray;
-    color: black;
+    color: gray;
 }
 
 .arrow-button-right {
-    color: gray;
+    color: black;
 }
 
 .calendar-dates {
