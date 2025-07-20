@@ -10,6 +10,10 @@ import cardImage1 from "../../assets/images/Mount climbing.png"
 import cardImage2 from "../../assets/images/Night camping.png"
 import cardImage3 from "../../assets/images/Mount climbing2.png"
 
+import destinationCardImg1 from "../../assets/images/Green wood forest.png";
+import destinationCardImg2 from "../../assets/images/Green forest Camp.png";
+import destinationCardImg3 from "../../assets/images/Desert Festival.png";
+
 const Header = () => {
     return(
         <div className={"header-main"}>
@@ -32,23 +36,27 @@ const Header = () => {
                     <DestinationCard img={cardImage2} main_Text={"Night camping"} location={"Lightning lake"}/>
                     <DestinationCard img={cardImage3} main_Text={"Mount climbing"} location={"Green Mountain"}/>
                 </div>
-                <div>
-                    <div>
-                        <div>
-                            <h3>Best Destination 🌈</h3>
-                            <p>100 Destination found</p>
+                <div className={"bottom-section"}>
+                    <div className={"bottom-left-section"}>
+                        <div className={"bottom-left-container"}>
+                            <div>
+                                <h3>Best Destination 🌈</h3>
+                                <p>100 Destination found</p>
+                            </div>
+                            <button>
+                                <Filter size={15}  className={"filter-icon"}/>
+                                <span>Filters</span>
+                            </button>
                         </div>
-                        <button>
-                            <Filter/>
-                            <span>Filters</span>
-                        </button>
+                        <div className={"best-destination-list"}>
+                            <BestDestinationList img={destinationCardImg1} location={"Telangana"} main_Text={"Green wood forest"}/>
+                            <BestDestinationList img={destinationCardImg2} location={"Channai"} main_Text={"Green forest Camp"}/>
+                            <BestDestinationList img={destinationCardImg3} location={"Gujarat"} main_Text={"Desert Festival"}/>
+                        </div>
                     </div>
-                    <div>
-                        <BestDestinationList/>
-                        <BestDestinationList/>
-                        <BestDestinationList/>
+                    <div className={"bottom-right-section"}>
+                        <JoinCard/>
                     </div>
-                    <JoinCard/>
                 </div>
             </div>
         </div>

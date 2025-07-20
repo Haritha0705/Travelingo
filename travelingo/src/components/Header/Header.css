@@ -4,30 +4,38 @@
     height: 100vh;
     padding-top: 20px;
 }
-.header-border{
+
+.header-border {
     border-radius: 44px;
     background-color: #F4F8F7;
     width: 70%;
     height: 96vh;
     padding: 30px;
+    box-sizing: border-box;
 }
-.top-section{
+
+.top-section {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-.top-section h1{
+
+.top-section h1 {
     font-size: 30px;
     margin-bottom: 10px;
 }
-.top-section p{
+
+.top-section p {
     color: gray;
     font-size: small;
 }
-.right-top-section{
+
+.right-top-section {
     display: flex;
     gap: 20px;
     align-items: center;
 }
+
 .notification-section {
     position: relative;
     width: 50px;
@@ -61,9 +69,91 @@
     background-color: #17C58B;
     box-shadow: 0 10px 20px rgba(23, 197, 139, 0.5);
 }
-.top-card-section{
+
+.top-card-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+    padding: 20px 0;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 10px;
+    flex-wrap: wrap;
+}
+
+.bottom-left-section {
+    flex: 1 1 560px;
+    max-width: 560px;
+    background-color: white;
+    height: 420px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
     padding: 20px;
+}
+
+.bottom-left-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-left-section h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.bottom-left-section p {
+    color: gray;
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+.bottom-left-section button {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    height: 36px;
+    color: gray;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    gap: 8px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.bottom-left-section button:hover {
+    background-color: #17C58B;
+    color: white;
+    border-color: #17C58B;
+    box-shadow: 0 10px 20px rgba(23, 197, 139, 0.3);
+}
+
+.best-destination-list {
+    display: flex;
+    gap: 10px;
+    padding: 20px 10px;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+.bottom-right-section {
+    flex: 0 0 270px;
+    height: 420px;
+    background-color: #17C58B;
+    border-radius: 16px;
+    box-sizing: border-box;
 }
