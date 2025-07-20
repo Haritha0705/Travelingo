@@ -1,6 +1,6 @@
 .join-main {
-    flex: 0 0 280px;
-    height: 420px;
+    width: 280px;
+    height: 400px;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,6 @@
     box-shadow: 0 8px 16px rgba(23, 197, 139, 0.5);
     opacity: 0.9;
 }
-
 
 .join-img {
     position: relative;

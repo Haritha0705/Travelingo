@@ -1,0 +1,92 @@
+.calendar-main {
+    padding: 50px 0;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-header h4 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.calendar-header span {
+    color: gray;
+}
+
+.arrow-section {
+    display: flex;
+    gap: 20px;
+}
+
+.arrow-button-left,
+.arrow-button-right {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F4F8F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    color: black;
+}
+
+.arrow-button-right {
+    color: gray;
+}
+
+.calendar-dates {
+    display: flex;
+    gap: 30px;
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 40px 0;
+}
+
+.calendar-date {
+    display: flex;
+    gap: 45px;
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 15px 0;
+    align-items: center;
+}
+
+.gray-dates {
+    color: gray;
+}
+
+.green-dates {
+    color: #17C58B;
+}
+
+.green-round {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #17C58B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calendar-date-rouned{
+    display: flex;
+    gap: 40px;
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 10px 0;
+    align-items: center;
+}
+.rounded {
+    border: 2px solid #17C58B;
+    border-radius: 100px;
+    padding: 5px;
+    gap: 38px;
+    display: flex;
+    align-items: center;
+}
