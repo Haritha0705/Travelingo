@@ -3,9 +3,9 @@ import "./Dashboard.css"
 
 const DashBoard = () => {
     return(
-        <>
-            <h1>Hello World</h1>
-        </>
+        <div>
+            <h1>DashBoard Page</h1>
+        </div>
     )
 }
 

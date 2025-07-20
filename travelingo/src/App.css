@@ -1,0 +1,13 @@
+.main {
+    background-color: white;
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f7f8fc;
+    overflow-y: auto;
+}
