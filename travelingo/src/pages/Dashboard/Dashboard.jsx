@@ -1,10 +1,11 @@
 import React from 'react';
 import "./Dashboard.css"
+import Header from "../../components/Header/Header.jsx";
 
 const DashBoard = () => {
     return(
         <div>
-            <h1>DashBoard Page</h1>
+            <Header/>
         </div>
     )
 }
