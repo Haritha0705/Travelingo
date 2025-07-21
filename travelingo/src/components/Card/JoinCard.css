@@ -1,3 +1,4 @@
+/* Desktop Size */
 .join-main {
     width: 280px;
     height: 400px;
@@ -13,7 +14,6 @@
     text-align: center;
     position: relative;
     overflow: hidden;
-
 }
 
 .img-back {
@@ -67,14 +67,17 @@
 .join-btn:hover {
     background-color: #FF8142;
 }
+
+/* Tablet Size */
 @media (max-width: 991px) {
     .join-main {
         width: 240px;
         height: 420px;
         border-radius: 14px;
-
     }
 }
+
+/* Mobile Size */
 @media (max-width: 640px) {
     .join-main {
         width: 390px;

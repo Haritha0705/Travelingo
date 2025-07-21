@@ -15,7 +15,9 @@ const menuItems = [
 const Sidebar = () => {
     return (
         <div className="sidebar">
+
             <h1>Travelingo</h1>
+
             <ul>
                 {menuItems.map((item, index) => (
                     <NavLink
@@ -23,24 +25,31 @@ const Sidebar = () => {
                         to={item.url}
                         className={({ isActive }) =>
                             `nav-item${isActive ? " active" : ""}`
-                        }
-                    >
+                        }>
+
                         <span className="icon">{item.icon}</span>
                         <span className="text">{item.name}</span>
+
                     </NavLink>
                 ))}
             </ul>
             <div className={"sidebar-banner"}>
+
                 <h3><span>50%</span> Discount</h3>
+
                 <p>Get a discount on certain days and don’t miss it. </p>
+
                 <button>
                     <ArrowRight size={30}/>
                 </button>
+
             </div>
+
             <button className={"logout-button"}>
                 <LogOut size={25} className={"logout-button-icon"}/>
                 <span>Log Out</span>
             </button>
+
         </div>
     );
 };

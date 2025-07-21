@@ -1,3 +1,4 @@
+/* Desktop Size */
 .card-main {
     width: 274px;
     height: 340px;
@@ -68,7 +69,8 @@
     gap: 4px;
     font-size: 14px;
 }
-/* ===== Tablet (≤ 991px) ===== */
+
+/* Tablet Size */
 @media (max-width: 991px) {
     .card-main{
         width: 240px;
@@ -77,6 +79,7 @@
     }
 }
 
+/* Mobile Size */
 @media (max-width: 640px) {
     .card-main{
         width: 390px;

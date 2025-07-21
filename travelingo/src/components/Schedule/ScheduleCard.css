@@ -1,3 +1,4 @@
+/* Desktop Size */
 .schedule-card-main{
     width: 380px;
     height: 93px;
@@ -34,12 +35,14 @@
     font-size: 17px;
     margin-bottom: 5px;
 }
+
 .schedule-card-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 16px;
 }
+
 .schedule-card-middle{
     color: gray;
     display: flex;
@@ -47,6 +50,7 @@
     gap: 10px;
     padding: 4px 0;
 }
+
 .peoples-bar {
     display: flex;
     align-items: center;
@@ -56,6 +60,7 @@
 .peoples-bar span{
     color: #17C58B;
 }
+
 .img-people-container {
     position: relative;
     width: 60px;
@@ -87,32 +92,37 @@
     left: 24px;
     z-index: 1;
 }
-/* ===== Tablet (≤ 991px) ===== */
+
+/* Tablet Size */
 @media (max-width: 991px) {
     .img-schedule-container {
         width: 60px;
         height: 60px;
         border-radius: 8px;
     }
+
     .schedule-card-main{
         width: 300px;
         height: 80px;
         padding: 2px 10px;
         gap: 10px;
     }
+
     .schedule-card-main h4{
         font-size: 14px;
         margin-bottom: 3px;
     }
+
     .schedule-card-img {
         border-radius: 8px;
     }
+
     .peoples-bar,.schedule-card-middle{
         display: none;
     }
-
 }
-/* Small devices (phones) */
+
+/* Mobile Size */
 @media (max-width: 640px) {
     .img-schedule-container {
         width: 100%;
@@ -120,13 +130,16 @@
         object-fit: cover;
         border-radius: 16px;
     }
+
     .schedule-card-main h4{
         font-size: 14px;
         margin-bottom: 3px;
     }
+
     .schedule-card-img {
         border-radius: 5px;
     }
+
     .schedule-card-main{
         width: 300px;
         height: 80px;

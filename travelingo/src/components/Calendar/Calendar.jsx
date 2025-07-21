@@ -36,6 +36,7 @@ const Calendar = () => {
                 <h5>02</h5>
                 <h5 className="green-dates">03</h5>
             </div>
+
             <div className="calendar-date">
                 <h5>04</h5>
                 <h5>05</h5>
@@ -45,6 +46,7 @@ const Calendar = () => {
                 <h5>09</h5>
                 <h5>10</h5>
             </div>
+
             <div className="calendar-date">
                 <h5>11</h5>
                 <h5>12</h5>
@@ -76,6 +78,7 @@ const Calendar = () => {
                 <h5>30</h5>
                 <h5>31</h5>
             </div>
+
         </div>
     );
 };

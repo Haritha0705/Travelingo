@@ -1,4 +1,4 @@
-/* ===== Desktop (default) ===== */
+/* Desktop Size */
 .dashBoard-main-container {
     display: flex;
     width: 100%;
@@ -56,7 +56,7 @@
     flex-direction: column;
 }
 
-/* ===== Tablet (≤ 991px) ===== */
+/* Tablet Size */
 @media (max-width: 991px) {
     .dashBoard-main-container {
         flex-direction: column;
@@ -83,7 +83,7 @@
     }
 }
 
-/* Small devices (phones) */
+/* Mobile Size */
 @media (max-width: 640px) {
     .bottom-dashboard-section{
         display: flex;
