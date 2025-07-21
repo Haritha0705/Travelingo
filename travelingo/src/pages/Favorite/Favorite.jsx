@@ -3,7 +3,7 @@ import "./Favorite.css"
 
 const Favorite = () => {
     return(
-        <div>
+        <div className={"page"}>
             <h1>Favorite Page</h1>
         </div>
     )

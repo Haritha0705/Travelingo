@@ -90,3 +90,79 @@
     display: flex;
     align-items: center;
 }
+
+/* ===== Tablet (≤ 991px) ===== */
+@media (max-width: 991px) {
+    .calendar-main {
+        padding: 20px 10px;
+    }
+    .calendar-header h4 {
+        font-size: 20px;
+    }
+    .arrow-button-left,
+    .arrow-button-right {
+        width: 30px;
+        height: 30px;
+    }
+    .calendar-dates {
+        gap: 26px;
+        font-size: 15px;
+        padding: 20px 0;
+    }
+
+    .calendar-date {
+        gap: 35px;
+        font-size: 15px;
+        padding: 10px 0;
+    }
+    .green-round {
+        width: 26px;
+        height: 26px;
+    }
+    .calendar-date-rouned{
+        gap: 28px;
+        font-size: 15px;
+        padding: 5px 0;
+        align-items: center;
+    }
+    .rounded {
+        border: 1px solid #17C58B;
+        gap: 30px;
+
+    }
+
+}
+/* Small devices (phones) */
+@media (max-width: 640px) {
+    .arrow-button-left,
+    .arrow-button-right {
+        width: 30px;
+        height: 30px;
+    }
+    .calendar-dates {
+        gap: 35px;
+        font-size: 15px;
+        padding: 20px 0;
+    }
+
+    .calendar-date {
+        gap: 45px;
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    .green-round {
+        width: 26px;
+        height: 26px;
+    }
+    .calendar-date-rouned{
+        gap: 40px;
+        font-size: 15px;
+        padding: 5px 0;
+        align-items: center;
+    }
+    .rounded {
+        border: 1px solid #17C58B;
+        gap: 36px;
+
+    }
+}

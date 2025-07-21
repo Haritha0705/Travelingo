@@ -20,6 +20,7 @@
 
 .left-side-card {
     display: flex;
+
     gap: 16px;
     align-items: center;
 }
@@ -32,7 +33,6 @@
     justify-content: center;
     overflow: hidden;
     border-radius: 16px;
-    flex-shrink: 0;
 }
 
 .destination-card-img {
@@ -44,21 +44,77 @@
 
 .destination-card-main h5 {
     font-size: 17px;
-    font-weight: normal;
-    margin-bottom: 8px;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+    color: #333;
 }
 
 .card-middle {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    gap: 4px;
 }
-.card-middle div{
+
+.card-middle div {
     display: flex;
     align-items: center;
     gap: 4px;
     color: gray;
+    font-size: 14px;
 }
-.price span{
+
+.price span {
     font-size: 20px;
+    font-weight: bold;
     color: black;
+}
+
+/* ===== Tablet (≤ 991px) ===== */
+@media (max-width: 991px) {
+    .destination-card-main {
+        width: 440px;
+        height: 90px;
+        border-radius: 14px;
+        padding: 8px 14px;
+    }
+
+    .img-container {
+        width: 70px;
+        height: 70px;
+    }
+
+    .destination-card-img {
+        border-radius: 14px;
+    }
+}
+
+/* ===== Mobile (≤ 640px) ===== */
+@media (max-width: 640px) {
+    .destination-card-main {
+        width: 350px;
+        height: 70px;
+        padding: 3px 6px;
+    }
+
+    .img-container {
+        max-width: 70px;
+        max-height: 50px;
+    }
+
+    .destination-card-img {
+        border-radius: 6px;
+    }
+    .card-middle div {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        color: gray;
+        font-size: 14px;
+    }
+
+    .price span {
+        font-size: 12px;
+        font-weight: bold;
+    }
 }

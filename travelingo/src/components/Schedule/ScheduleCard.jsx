@@ -10,12 +10,12 @@ import person3 from "../../assets/images/person3.jpg"
 const ScheduleCard = ({img,title}) => {
     return(
         <div className={"schedule-card-main"}>
-            <div className={"img-container"}>
-                <img src={img} alt={""} className={"destination-card-img"}/>
+            <div className={"img-schedule-container"}>
+                <img src={img} alt={""} className={"schedule-card-img"}/>
             </div>
             <div>
                 <h4>{title}</h4>
-                <div className={"card-middle"}>
+                <div className={"schedule-card-middle"}>
                     <Calendar size={20}/>
                     <p>20 may - 23 may </p>
                 </div>

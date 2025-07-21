@@ -1,3 +1,31 @@
+/*.search-container {*/
+/*    position: relative;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    width: 300px;*/
+/*}*/
+
+/*.search-icon {*/
+/*    position: absolute;*/
+/*    left: 15px;*/
+/*    color: gray;*/
+/*}*/
+
+/*.input-box {*/
+/*    padding-left: 40px;*/
+/*    border: none;*/
+/*    border-radius: 100px;*/
+/*    width: 100%;*/
+/*    height: 50px;*/
+/*    font-size: 16px;*/
+/*    outline: none;*/
+/*}*/
+
+/*.input-box::placeholder {*/
+/*    opacity: 0.5;*/
+/*    color: gray;*/
+/*}*/
+/* --- Default (Desktop) --- */
 .search-container {
     position: relative;
     display: flex;
@@ -24,4 +52,32 @@
 .input-box::placeholder {
     opacity: 0.5;
     color: gray;
+}
+
+/* --- Tablet (≤ 991px) --- */
+@media (max-width: 991px) {
+    .search-container {
+        width: 250px;
+    }
+
+    .input-box {
+        height: 45px;
+        font-size: 14px;
+    }
+}
+
+/* --- Mobile (≤ 767px) --- */
+@media (max-width: 767px) {
+    .search-container {
+        width: 100%; /* full width for mobile */
+    }
+
+    .input-box {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .search-icon {
+        left: 12px;
+    }
 }

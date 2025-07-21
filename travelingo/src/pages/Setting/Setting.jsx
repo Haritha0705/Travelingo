@@ -3,7 +3,7 @@ import "./Setting.css"
 
 const Setting = () => {
     return(
-        <div>
+        <div className={"page"}>
             <h1>Setting Page</h1>
         </div>
     )

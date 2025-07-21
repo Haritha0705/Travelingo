@@ -1,10 +1,14 @@
+/* ========== Base Sidebar Styles ========== */
 .sidebar {
     width: 300px;
-    min-height: 100vh;
+    height: 100vh;
+    position: fixed;
     background-color: white;
     padding: 40px;
-    justify-items: center;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15)
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .sidebar h1 {
@@ -23,6 +27,7 @@
     gap: 10px;
 }
 
+/* ========== Navigation Item Styles ========== */
 .nav-item {
     display: flex;
     align-items: center;
@@ -38,19 +43,23 @@
 
 .nav-item .icon {
     margin-right: 10px;
+    color: gray;
 }
 
-.nav-item:hover {
-    background-color: #f0f0f0;
-}
-
+.nav-item:hover,
 .nav-item.active {
     background-color: #17C58B;
     color: white;
-    font-size: 19px;
     box-shadow: 0 10px 20px rgba(23, 197, 139, 0.5);
 }
-.sidebar-banner{
+
+.nav-item:hover .icon,
+.nav-item.active .icon {
+    color: white;
+}
+
+/* ========== Sidebar Banner ========== */
+.sidebar-banner {
     position: relative;
     width: 220px;
     height: 220px;
@@ -59,30 +68,39 @@
     padding: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
-.sidebar-banner h3{
+
+.sidebar-banner h3 {
     color: black;
     margin-bottom: 10px;
+    padding: 4px;
 }
-.sidebar-banner span{
+
+.sidebar-banner span {
     color: #FF8142;
 }
-.sidebar-banner p{
+
+.sidebar-banner p {
     color: #5E5E5E;
     font-size: small;
 }
-.sidebar-banner button{
+
+.sidebar-banner button {
     position: absolute;
     bottom: 20px;
     left: 20px;
     color: white;
     background-color: #FF8142;
     border-radius: 100%;
+    display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     border: none;
+    cursor: pointer;
 }
+
+/* ========== Logout Button ========== */
 .logout-button {
     display: flex;
     gap: 20px;
@@ -100,4 +118,97 @@
 
 .logout-button:hover {
     background-color: #f0f0f0;
+}
+
+/* ========== Sidebar Icon ========== */
+.sidebar-icon {
+    width: 25px;
+    height: 25px;
+    color: gray;
+}
+
+.nav-item.active .sidebar-icon,
+.nav-item:hover .sidebar-icon {
+    color: white;
+}
+
+/* ========== Responsive Styles ========== */
+@media (max-width: 991px) {
+    .sidebar {
+        width: 100px;
+        padding: 20px 10px;
+    }
+
+    .sidebar h1 {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    .nav-item {
+        margin: 0;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .nav-item .text {
+        display: none;
+    }
+
+    .nav-item .icon {
+        margin: 0;
+        color: gray;
+    }
+
+    .nav-item.active .icon {
+        color: white;
+    }
+
+    .sidebar-banner {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logout-button {
+        padding: 10px;
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .sidebar-icon {
+        width: 30px;
+        height: 30px;
+        color: gray;
+    }
+
+    .nav-item.active .sidebar-icon {
+        color: white;
+    }
+
+    .sidebar-banner p {
+        display: none;
+    }
+
+    .sidebar-banner h3 {
+        font-size: 14px;
+        padding: 2px;
+        margin-bottom: 60px;
+    }
+    .logout-button-icon{
+        width: 25px;
+        height: 25px;
+    }
+    .logout-button {
+        padding: 40px 30px;
+        font-size: 14px;
+    }
+    .logout-button span{
+        display: none;
+    }
+}
+/* Small devices (phones) */
+@media (max-width: 640px) {
+    .sidebar{
+        display: none;
+    }
 }

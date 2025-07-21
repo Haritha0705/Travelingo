@@ -4,12 +4,12 @@ import { Home, Ticket, Star, MessageCircle, Wallet, Settings,ArrowRight,LogOut }
 import "./Sidebar.css";
 
 const menuItems = [
-    { icon: <Home size={25} />, name: "Dashboard", url: "/dashboard" },
-    { icon: <Ticket size={25} />, name: "Ticket", url: "/ticket" },
-    { icon: <Star size={25} />, name: "Favorite", url: "/favorite" },
-    { icon: <MessageCircle size={25} />, name: "Message", url: "/message" },
-    { icon: <Wallet size={25} />, name: "Transaction", url: "/transaction" },
-    { icon: <Settings size={25} />, name: "Setting", url: "/setting" }
+    { icon: <Home className={"sidebar-icon"}/>, name: "Dashboard", url: "/dashboard" },
+    { icon: <Ticket className={"sidebar-icon"} />, name: "Ticket", url: "/ticket" },
+    { icon: <Star className={"sidebar-icon"} />, name: "Favorite", url: "/favorite" },
+    { icon: <MessageCircle className={"sidebar-icon"} />, name: "Message", url: "/message" },
+    { icon: <Wallet className={"sidebar-icon"} />, name: "Transaction", url: "/transaction" },
+    { icon: <Settings className={"sidebar-icon"} />, name: "Setting", url: "/setting" }
 ];
 
 const Sidebar = () => {
@@ -38,7 +38,7 @@ const Sidebar = () => {
                 </button>
             </div>
             <button className={"logout-button"}>
-                <LogOut size={25}/>
+                <LogOut size={25} className={"logout-button-icon"}/>
                 <span>Log Out</span>
             </button>
         </div>

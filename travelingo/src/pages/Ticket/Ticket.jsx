@@ -3,7 +3,7 @@ import "./Ticket.css"
 
 const Ticket = () => {
     return(
-        <div>
+        <div className={"page"}>
             <h1>Ticket Page</h1>
         </div>
     )

@@ -3,7 +3,7 @@ import "./Message.css"
 
 const Message = () => {
     return(
-        <div>
+        <div className={"page"}>
             <h1>Message Page</h1>
         </div>
     )

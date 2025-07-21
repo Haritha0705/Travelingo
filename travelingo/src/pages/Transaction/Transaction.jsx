@@ -3,7 +3,7 @@ import "./Transaction.css"
 
 const Transaction = () => {
     return(
-        <div>
+        <div className={"page"}>
             <h1>Transaction Page</h1>
         </div>
     )

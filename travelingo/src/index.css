@@ -4,4 +4,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: NotoSans,sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

@@ -1,24 +1,18 @@
-h1{
-    color: black;
-    font-size: 50px;
-}
-.dashBoard-main-container{
+/* ===== Desktop (default) ===== */
+.dashBoard-main-container {
     display: flex;
-    justify-content: space-between;
     width: 100%;
     height: 100vh;
-}
-.dashBoard-main-container-left{
-    width: 70%;
-    height: 100vh;
+    padding-left: 300px;
 }
 
-.dashBoard-main-container-right{
+.dashBoard-main-container-right {
     width: 30%;
     height: 100vh;
     background-color: white;
-    padding:30px 10px 20px 10px;
+    padding: 30px 10px 20px 10px;
 }
+
 .profile-img{
     width: 50px;
 }
@@ -60,4 +54,48 @@ h1{
     gap: 10px;
     padding: 20px 10px;
     flex-direction: column;
+}
+
+/* ===== Tablet (≤ 991px) ===== */
+@media (max-width: 991px) {
+    .dashBoard-main-container {
+        flex-direction: column;
+        height: auto;
+        padding-left: 100px;
+    }
+
+    .dashBoard-main-container-right {
+        width: 100%;
+        height: 65vh;
+        padding: 20px;
+    }
+
+
+    .bottom-dashboard-section{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ScheduleCard-container{
+        gap: 5px;
+    }
+    .schedule-card h4{
+        font-size: 20px;
+    }
+}
+
+/* Small devices (phones) */
+@media (max-width: 640px) {
+    .bottom-dashboard-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .ScheduleCard-container{
+        flex-direction: row;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+    .dashBoard-main-container {
+        padding-left: 0;
+    }
 }

@@ -67,3 +67,33 @@
 .join-btn:hover {
     background-color: #FF8142;
 }
+@media (max-width: 991px) {
+    .join-main {
+        width: 240px;
+        height: 420px;
+        border-radius: 14px;
+
+    }
+}
+@media (max-width: 640px) {
+    .join-main {
+        width: 390px;
+        height: 420px;
+        border-radius: 14px;
+
+    }
+    .join-main h3 {
+        font-size: 28px;
+    }
+
+    .join-main p {
+        font-size: 18px;
+    }
+    .img-back {
+        top: 180px;
+    }
+    .join-btn {
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
